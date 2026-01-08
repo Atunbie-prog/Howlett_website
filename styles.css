@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: Poppins;
+}
+.hero {
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    height: 100vh;
+    width: auto;
+}
+.sidebar {
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.162);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    display: none;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+}    
+.sidebar ul { 
+    padding: 20px;
+    gap: 50px;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+}
+#ons {
+    background-color: rgba(0, 26, 255, 0.516);
+    color: white;
+    backdrop-filter: blur(10px);
+}
+.sidebar h1{
+    margin-top: 10px;
+    justify-self: center;
+    margin-bottom: 10px;
+    color: orange;
+}
+.sidebar li {
+        margin-bottom: 50px;
+    }
+.sidebar ul li a {
+    color: orange;
+    opacity: 0.9;
+    padding: 10px;
+    text-decoration: none;
+}
+.sidebar ul li a:hover {
+    transition: 0.3s;
+    color: orange;
+}
+.sidebar button {
+    border: none;
+    padding: 10px;
+    color: #333;
+}
+.nav {
+    border-radius: 25px;
+    box-shadow: 0 4px 10px grey;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px;
+    display: flex;
+    width: auto;
+}
+.nav ul {
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    gap:25px;
+}
+.nav h1 {
+    color: orange;
+}
+.nav ul li a {
+    box-shadow: 0 3px 3px white;
+    color: white;
+    padding: 10px;
+    border-radius: 9px;
+    text-decoration: none;
+}
+#on {
+    box-shadow: 0 3px 3px orange;
+    color: orange;
+}
+.nav ul li a:hover {
+    transition: 0.1s;
+    box-shadow: 0 3px 3px orange;
+    color: orange;
+}
+.nav ul li a:active {
+    background-color: #333;
+}
+.nav button {
+    font-size: 13px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+}
+.nav button:hover {
+    background-color: orange;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+.nav button:active {
+    background-color: rgb(151, 102, 12);
+}
+.hero_description {
+    max-width: 700px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+.hero_description h1 {
+    font-size: 3.2rem;
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+}
+.hero_description p {
+    font-size: 13px;
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+}
+.hero_description span {
+    color: orange;
+}
+.discover {
+    gap: 200px;
+    display: flex;
+    padding: 10px;
+}
+.first_description {
+    max-width: 500px;
+    width: 90%;
+    padding: 8px;
+}
+.first_description h1 {
+    text-align: center;
+}
+.first_description img {
+    width: 100%;
+    height: 80vh;
+}
+#first-description-image2 {
+    width: 270px;
+    height: 250px;
+    margin-top: 40px;
+    background-position: center;
+    border-radius: 50%;
+}
+.first-one {
+    padding: 10px;
+}
+.second-one {
+    padding: 10px;
+}
+.first-one img {
+    width: 100%;
+    height: 250px;
+}
+.second-one img {
+    width: 100%;
+    height: 250px;
+}
+ @media(max-width: 600px) {
+  .nav{
+    display: none;
+  }
+  .hero_description {
+    margin-top: 200px;
+  }
+#on {
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+.nav ul li a:hover {
+    transition: 0.1s;
+    color: orange;
+    background-color: #f5f5f5;  /* Light grey background */
+}
+
+.discover {
+    flex-direction: column;
+}
+ }
+
+/* R E G I S T R A T I O N   F  O R M */
+.registration-form {
+    box-shadow: 0 4px 10px grey;
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    
+    border-radius: 10px;
+}
+.registration-form h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dandt {
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+}
+.dandt input {
+    border-radius: 8px;
+    font-size: 15px;
+    border: 2px solid #ddd;
+    width: 190px;
+    padding: 5px;
+}
+select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 12px;
+    background: white;
+    cursor: pointer;
+}
+
+.names {
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+}
+.names input {
+    border-radius: 8px;
+    font-size: 15px;
+    border: 2px solid #ddd;
+    width: 190px;
+    padding: 5px;
+}
+
+.eandp {
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+}
+.eandp input {
+    border-radius: 8px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    width: 190px;
+    padding: 5px;
+}
+.comments textarea{
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    padding: 5px;
+    font-size: 15px;
+}
+.registration {
+    justify-self: center;
+    padding: 10px;
+    display: flex;
+    gap: 50px;
+}
+.registration .buttons button {
+    border: none;
+    padding: 9px;
+    font-size: 13px;
+    border-radius: 8px;
+    background-color: orange;
+    color: white;
+    opacity: 0.9;
+}
+.registration .buttons {
+    justify-self: center;
+    margin-top: 10px;
+}
+@media(max-width:500px) {
+    .registration-form{
+        width: auto;
+    }
+    .registration {
+        flex-direction: column;
+    }
+}
+@media(max-width:800px) {
+    .registration{
+        justify-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.row {
+    display: flex;
+    gap: 50px;
+}
+.box {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-image {
+    width: 250px;
+    height: 150px;
+}
+.box-image img {
+    height: 100%;
+    width: 100%;
+}
+.box-description {
+    padding: 5px;
+    width: auto;
+    height: auto;
+}
+.box-description p {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.box-description #i {
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+@media(max-width: 500px) {
+    .dish-menu {
+        padding: 10px;
+    }
+    .row {
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        flex-direction: column;
+    }
+}

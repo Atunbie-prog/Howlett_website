@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBT</title>
+    <link rel="stylesheet" href="styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <section class="hero">
+        <nav class="nav">
+            <h1>HOWLETT</h1>
+            <ul>
+                <li><a href="index.html" id="on">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+                <button type="button">RESERVATION</button>
+            </ul>
+        </nav>
+
+        <nav class="sidebar">
+            <h1>HOWLETT</h1>
+            <ul>
+                <li><a href="index.html" id="ons">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+                <button type="button">RESERVATION</button>
+            </ul>
+        </nav>
+
+        <div class="hero_description">
+            <h1>A Really Good Place to<span> Eat </span>In the City of New York</h1>
+            <p>Massa praesent sit suspendisse ac volutpat amet. Commodo elit at non neque ullamcorper id..</p>
+        </div>
+    </section>
+
+    <section class="registration">
+        <form action="#">
+        <div class="registration-form">
+            <center><h1>Booking</h1>
+            <p>Reserve your dining eXperience with us</p></center><br>
+            <div class="dandt">
+                <div class="date">
+                    <label><b>Date*</b></label><br>
+                    <input type="date">
+                </div>
+                <div class="time">
+                    <label><b>Time*</b></label><br>
+                    <input type="time">
+                </div>
+            </div><br>
+
+            <div class="people">
+                <label for="people">Number Of People</label>
+                <select name="people" id="people" required>
+                    <option value="1 person">1 person</option>
+                    <option value="2 persons">2</option>
+                    <option value="3 persons">3</option>
+                    <option value="4 persons">4</option>
+                    <option value="5 persons">5</option>
+                    <option value="6 persons">6</option>
+                    <option value="7 persons">7</option>
+                    <option value="8 persons">8</option>
+                    <option value="9 persons">9</option>
+                    <option value="10 persons">10</option>
+                    <option value="11 persons">11</option>
+                    <option value="12 persons">12</option>
+                    <option value="13 persons">13</option>
+                    <option value="14 persons">14</option>
+                    <option value="15 persons">15</option>
+                    <option value="16 persons">16</option>
+                    <option value="17 persons">17</option>
+                    <option value="18  persons">18</option>
+                    <option value="19  persons">19</option>
+                    <option value="20  persons">20</option>
+                </select>
+            </div><br>
+
+             <div class="names">
+                <div class="fname">
+                    <label><b>FirstName*</b></label><br>
+                    <input id="fname" type="text">
+                    <p id="display"></p>
+                </div>
+                <div class="lname">
+                    <label><b>LastName*</b></label><br>
+                    <input type="text">
+                </div>
+            </div><br>
+
+              <div class="eandp">
+                <div class="email">
+                    <label><b>Email*</b></label><br>
+                    <input type="email" placeholder="John@example.com">
+                </div>
+                <div class="phone">
+                    <label><b>Phone*</b></label><br>
+                    <input type="tel" placeholder="(555) 123-4567">
+                </div>
+            </div><br>
+
+            <div class="comments">
+                <label><b>Comment</b> (optional)</label><br>
+                <textarea name="" id="" rows="5" placeholder="Enter your text here...."></textarea>
+            </div>
+            
+            <div class="subscribe">
+                <label>Subscribe to the newsletter</label>
+                <input type="checkbox">
+            </div>
+
+            <div class="buttons">
+                <button type="button" onclick="ValidateForm()">Book a Table</button>
+                <button type="reset">Reset</button>
+            </div>
+        </div>
+        </form>
+    </section><br><br>
+
+    <section class="dish-menu">
+        <center><h1>Dish Menu</h1></center><br>
+        <div class="row">
+            <div class="box">
+                <div class="box-description">
+                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
+                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
+                    <i id="i">Gluten-free, High-protein</i>
+                </div>
+                <div class="box-image">
+                    <img src="images/coffee.jpg">
+                </div>
+            </div><br>
+
+               <div class="box">
+                <div class="box-description">
+                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
+                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
+                    <i id="i">Gluten-free, High-protein</i>
+                </div>
+                <div class="box-image">
+                    <img src="images/coffee.jpg">
+                </div>
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="box">
+                <div class="box-description">
+                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
+                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
+                    <i id="i">Gluten-free, High-protein</i>
+                </div>
+                <div class="box-image">
+                    <img src="images/coffee.jpg">
+                </div>
+            </div><br>
+
+               <div class="box">
+                <div class="box-description">
+                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
+                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
+                    <i id="i">Gluten-free, High-protein</i>
+                </div>
+                <div class="box-image">
+                    <img src="images/coffee.jpg">
+                </div>
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="box">
+                <div class="box-description">
+                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
+                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
+                    <i id="i">Gluten-free, High-protein</i>
+                </div>
+                <div class="box-image">
+                    <img src="images/coffee.jpg">
+                </div>
+            </div><br>
+
+               <div class="box">
+                <div class="box-description">
+                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
+                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
+                    <i id="i">Gluten-free, High-protein</i>
+                </div>
+                <div class="box-image">
+                    <img src="images/coffee.jpg">
+                </div>
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="box">
+                <div class="box-description">
+                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
+                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
+                    <i id="i">Gluten-free, High-protein</i>
+                </div>
+                <div class="box-image">
+                    <img src="images/coffee.jpg">
+                </div>
+            </div><br>
+
+               <div class="box">
+                <div class="box-description">
+                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
+                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
+                    <i id="i">Gluten-free, High-protein</i>
+                </div>
+                <div class="box-image">
+                    <img src="images/coffee.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const fname = document.getElementById('email');
+        const display = document.getElementById('display')
+        function ValidateForm(){
+            if (fname.== ''){
+                alert('Please Enter Your Name.')
+            }
+        }
+    </script>
+</body>
+</html>
