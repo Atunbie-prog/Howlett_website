@@ -1,233 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HBT</title>
-    <link rel="stylesheet" href="styles.css">
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Howlett Table — Exceptional Dining in New York</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <meta name="description" content="Howlett Table — exceptional dining in New York City. Reserve a table, explore our menu and private dining options." />
 </head>
 <body>
-    <section class="hero">
-        <nav class="nav">
-            <h1>HOWLETT</h1>
-            <ul>
-                <li><a href="index.html" id="on">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Contact</a></li>
-                <button type="button">RESERVATION</button>
-            </ul>
-        </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Howlett Table</a>
 
-        <nav class="sidebar">
-            <h1>HOWLETT</h1>
-            <ul>
-                <li><a href="index.html" id="ons">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Contact</a></li>
-                <button type="button">RESERVATION</button>
-            </ul>
-        </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fa fa-bars"></i>
+      </button>
 
-        <div class="hero_description">
-            <h1>A Really Good Place to<span> Eat </span>In the City of New York</h1>
-            <p>Massa praesent sit suspendisse ac volutpat amet. Commodo elit at non neque ullamcorper id..</p>
+      <nav id="mainNav" class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn-reserve" href="#booking">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content" role="region" aria-label="Hero">
+        <h1>Experience Exceptional Dining in New York City</h1>
+        <p class="lead">Seasonal, thoughtfully sourced cuisine served in an intimate setting. Book a table for a memorable evening.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#booking">Reserve a Table</a>
+          <a class="btn btn-outline" href="#menu">View Menu</a>
         </div>
+      </div>
     </section>
 
-    <section class="registration">
-        <form action="#">
-        <div class="registration-form">
-            <center><h1>Booking</h1>
-            <p>Reserve your dining eXperience with us</p></center><br>
-            <div class="dandt">
-                <div class="date">
-                    <label><b>Date*</b></label><br>
-                    <input type="date">
-                </div>
-                <div class="time">
-                    <label><b>Time*</b></label><br>
-                    <input type="time">
-                </div>
-            </div><br>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>About Howlett Table</h2>
+          <p>Howlett Table brings a modern take on classic dishes. Our chefs combine seasonal produce with precise technique to create approachable yet refined plates.</p>
+          <ul class="features">
+            <li><i class="fa fa-seedling"></i> Local & seasonal ingredients</li>
+            <li><i class="fa fa-wine-bottle"></i> Thoughtful wine pairings</li>
+            <li><i class="fa fa-leaf"></i> Sustainable sourcing</li>
+          </ul>
+        </div>
+        <div class="about-image" aria-hidden="true">
+          <!-- Supply an image at images/about.jpg -->
+          <img src="images/about.jpg" alt="Dining at Howlett Table" />
+        </div>
+      </div>
+    </section>
 
-            <div class="people">
-                <label for="people">Number Of People</label>
-                <select name="people" id="people" required>
-                    <option value="1 person">1 person</option>
-                    <option value="2 persons">2</option>
-                    <option value="3 persons">3</option>
-                    <option value="4 persons">4</option>
-                    <option value="5 persons">5</option>
-                    <option value="6 persons">6</option>
-                    <option value="7 persons">7</option>
-                    <option value="8 persons">8</option>
-                    <option value="9 persons">9</option>
-                    <option value="10 persons">10</option>
-                    <option value="11 persons">11</option>
-                    <option value="12 persons">12</option>
-                    <option value="13 persons">13</option>
-                    <option value="14 persons">14</option>
-                    <option value="15 persons">15</option>
-                    <option value="16 persons">16</option>
-                    <option value="17 persons">17</option>
-                    <option value="18  persons">18</option>
-                    <option value="19  persons">19</option>
-                    <option value="20  persons">20</option>
+    <!-- MENU (simple showcase) -->
+    <section id="menu" class="section alt">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <p class="sub">A small selection to showcase our seasonal approach.</p>
+
+        <div class="menu-grid">
+          <article class="menu-item">
+            <h3>Roasted Beet Salad</h3>
+            <p class="muted">Goat cheese, toasted walnuts, citrus vinaigrette.</p>
+          </article>
+          <article class="menu-item">
+            <h3>Pan-Seared Salmon</h3>
+            <p class="muted">Herb butter, charred lemon, seasonal vegetables.</p>
+          </article>
+          <article class="menu-item">
+            <h3>Dry-Aged Ribeye</h3>
+            <p class="muted">Bone-in, truffle butter, rosemary jus.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="section booking">
+      <div class="container grid-2">
+        <div>
+          <h2>Reserve Your Table</h2>
+          <p>Use the form to request a reservation. We'll confirm availability by email or phone.</p>
+
+          <form id="bookingForm" class="booking-form" method="post" action="#">
+            <label for="resName">Full name</label>
+            <input id="resName" name="name" type="text" required placeholder="Jane Doe" />
+
+            <label for="resEmail">Email</label>
+            <input id="resEmail" name="email" type="email" required placeholder="you@example.com" />
+
+            <div class="inline-row">
+              <div>
+                <label for="resDate">Date</label>
+                <input id="resDate" name="date" type="date" required />
+              </div>
+              <div>
+                <label for="resTime">Time</label>
+                <input id="resTime" name="time" type="time" required />
+              </div>
+              <div>
+                <label for="resParty">Party size</label>
+                <select id="resParty" name="party" required>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
                 </select>
-            </div><br>
-
-             <div class="names">
-                <div class="fname">
-                    <label><b>FirstName*</b></label><br>
-                    <input id="fname" type="text">
-                    <p id="display"></p>
-                </div>
-                <div class="lname">
-                    <label><b>LastName*</b></label><br>
-                    <input type="text">
-                </div>
-            </div><br>
-
-              <div class="eandp">
-                <div class="email">
-                    <label><b>Email*</b></label><br>
-                    <input type="email" placeholder="John@example.com">
-                </div>
-                <div class="phone">
-                    <label><b>Phone*</b></label><br>
-                    <input type="tel" placeholder="(555) 123-4567">
-                </div>
-            </div><br>
-
-            <div class="comments">
-                <label><b>Comment</b> (optional)</label><br>
-                <textarea name="" id="" rows="5" placeholder="Enter your text here...."></textarea>
-            </div>
-            
-            <div class="subscribe">
-                <label>Subscribe to the newsletter</label>
-                <input type="checkbox">
+              </div>
             </div>
 
-            <div class="buttons">
-                <button type="button" onclick="ValidateForm()">Book a Table</button>
-                <button type="reset">Reset</button>
+            <label for="resNote">Notes (optional)</label>
+            <textarea id="resNote" name="notes" rows="3" placeholder="Allergies or requests"></textarea>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Request Reservation</button>
+              <button type="reset" class="btn btn-outline">Clear</button>
             </div>
+            <p class="form-hint">This form is a front-end demo. Connect it to your backend to receive reservations.</p>
+          </form>
         </div>
-        </form>
-    </section><br><br>
 
-    <section class="dish-menu">
-        <center><h1>Dish Menu</h1></center><br>
-        <div class="row">
-            <div class="box">
-                <div class="box-description">
-                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
-                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
-                    <i id="i">Gluten-free, High-protein</i>
-                </div>
-                <div class="box-image">
-                    <img src="images/coffee.jpg">
-                </div>
-            </div><br>
-
-               <div class="box">
-                <div class="box-description">
-                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
-                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
-                    <i id="i">Gluten-free, High-protein</i>
-                </div>
-                <div class="box-image">
-                    <img src="images/coffee.jpg">
-                </div>
-            </div>
-        </div><br>
-
-        <div class="row">
-            <div class="box">
-                <div class="box-description">
-                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
-                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
-                    <i id="i">Gluten-free, High-protein</i>
-                </div>
-                <div class="box-image">
-                    <img src="images/coffee.jpg">
-                </div>
-            </div><br>
-
-               <div class="box">
-                <div class="box-description">
-                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
-                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
-                    <i id="i">Gluten-free, High-protein</i>
-                </div>
-                <div class="box-image">
-                    <img src="images/coffee.jpg">
-                </div>
-            </div>
-        </div><br>
-
-        <div class="row">
-            <div class="box">
-                <div class="box-description">
-                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
-                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
-                    <i id="i">Gluten-free, High-protein</i>
-                </div>
-                <div class="box-image">
-                    <img src="images/coffee.jpg">
-                </div>
-            </div><br>
-
-               <div class="box">
-                <div class="box-description">
-                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
-                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
-                    <i id="i">Gluten-free, High-protein</i>
-                </div>
-                <div class="box-image">
-                    <img src="images/coffee.jpg">
-                </div>
-            </div>
-        </div><br>
-
-        <div class="row">
-            <div class="box">
-                <div class="box-description">
-                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
-                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
-                    <i id="i">Gluten-free, High-protein</i>
-                </div>
-                <div class="box-image">
-                    <img src="images/coffee.jpg">
-                </div>
-            </div><br>
-
-               <div class="box">
-                <div class="box-description">
-                    <h2>Grilled Atlantic Salmon - <i>$28.99</i></h2>
-                    <p>Fresh Atlantic salmon fillet grilled to perfection, served with roasted asparagus, garlic mashed potatoes and lemon butter sauce.</p><br>
-                    <i id="i">Gluten-free, High-protein</i>
-                </div>
-                <div class="box-image">
-                    <img src="images/coffee.jpg">
-                </div>
-            </div>
-        </div>
+        <aside class="contact-card" aria-label="Contact details">
+          <h3>Contact & Hours</h3>
+          <p><strong>Address:</strong> 123 Howlett Ave, New York, NY</p>
+          <p><strong>Phone:</strong> (555) 555‑5555</p>
+          <p><strong>Hours:</strong><br/>Tue–Sun: 5pm – 11pm</p>
+          <div class="map-placeholder">Map placeholder (add embedded map or image)</div>
+        </aside>
+      </div>
     </section>
 
-    <script>
-        const fname = document.getElementById('email');
-        const display = document.getElementById('display')
-        function ValidateForm(){
-            if (fname.== ''){
-                alert('Please Enter Your Name.')
-            }
-        }
-    </script>
+    <!-- CONTACT / FOOTER -->
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="brand-footer">Howlett Table</p>
+          <p class="muted">© <span id="year"></span> Howlett Table. All rights reserved.</p>
+        </div>
+        <div class="social">
+          <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Small JS: nav toggle + simple front-end form demo -->
+  <script>
+    (function () {
+      const navToggle = document.getElementById('navToggle');
+      const mainNav = document.getElementById('mainNav');
+
+      navToggle.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        mainNav.classList.toggle('open');
+      });
+
+      // Form submission demo: prevent default and show confirmation
+      const bookingForm = document.getElementById('bookingForm');
+      bookingForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Basic client-side validation is provided by HTML attributes.
+        alert('Thank you — your reservation request has been sent (demo).');
+        this.reset();
+        // For production: use fetch() to POST to your backend endpoint.
+      });
+
+      // Footer year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
